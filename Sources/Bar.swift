@@ -33,7 +33,6 @@ open class BarView: UIView {
         _ cornerRadius: CGFloat = 0.0,
         _ color: UIColor = UIColor.black,
         _ x: CGFloat = 0.0,
-        _ y: CGFloat = 0.0,
         _ minHeight: CGFloat = 0.0,
         _ maxHeight: CGFloat = 0.0
         ) {
@@ -42,9 +41,9 @@ open class BarView: UIView {
         
         self.animationSpeed = Double.random(min: 0.5, max: 0.9)
         self.x = x
-        self.y = y
+        self.y = maxHeight - AudioIndicatorBarsView.barsOffset
         self.minHeight = minHeight
-        self.maxHeight = maxHeight
+        self.maxHeight = maxHeight - AudioIndicatorBarsView.barsOffset * 2
         
         self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = true
@@ -82,7 +81,7 @@ open class BarView: UIView {
                     
                     self.frame = CGRect(
                         x: self.x,
-                        y: self.maxHeight,
+                        y: self.y,
                         width: self.minHeight,
                         height: -self.maxHeight
                     )
@@ -99,7 +98,7 @@ open class BarView: UIView {
                         
                         self.frame = CGRect(
                             x: self.x,
-                            y: self.maxHeight,
+                            y: self.y,
                             width: self.minHeight,
                             height: -self.minHeight
                         )

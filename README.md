@@ -7,7 +7,7 @@
 <p>
 
 <p align="center">
-Indicates for your app users which audio is playing.
+Indicates for your app users which audio is playing. Just like the Podcast app.
 <p>
 
 <p align="center">
@@ -113,9 +113,15 @@ let indicator: AudioIndicatorBarsView =
 
 #### Interface Builder
 
-![IB1.png](Images/IB1.png)
+| Indentity Inspector | Atributes Inspector | Result |
+|:-:|:-:|:-:|
+| ![IB1.png](Images/IB1.png) | ![IB2.png](Images/IB2.png) | ![example1.gif](Images/example1.gif) |
 
-![IB2.png](Images/IB2.png)
+This GIF is not as smooth as it really is though 😀. You can check the videos in [Images](Images) folder.
+
+Here are some possibilities.
+
+![example2.gif](Images/example2.gif)
 
 
 ### Actions

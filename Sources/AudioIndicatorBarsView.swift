@@ -13,7 +13,7 @@ import UIKit
 open class AudioIndicatorBarsView: UIView {
     
     // MARK: - Lets
-    fileprivate let barsOffset: CGFloat = 2.0
+    static let barsOffset: CGFloat = 0.5
     
     // MARK: - Vars
     fileprivate var barsSet: [BarView] = []
@@ -82,12 +82,12 @@ open class AudioIndicatorBarsView: UIView {
         
         for i in 0 ..< self.barsCount {
             
-            let x = sectionsWidth * CGFloat(i) + self.barsOffset
-            let width = sectionsWidth - self.barsOffset * 2
+            let x = sectionsWidth * CGFloat(i) + AudioIndicatorBarsView.barsOffset
+            let width = sectionsWidth - AudioIndicatorBarsView.barsOffset * 2
             let y: CGFloat = rect.height - width
             
-            let frame: CGRect = CGRect(x: x, y: y, width: width, height: width)
-            let bar: BarView = BarView(frame, cornerRadius, color, x, y, width, rect.height)
+            let frame: CGRect = CGRect(x: x, y: y - AudioIndicatorBarsView.barsOffset, width: width, height: width)
+            let bar: BarView = BarView(frame, cornerRadius, color, x, width, rect.height)
             
             self.barsSet.append(bar)
             
