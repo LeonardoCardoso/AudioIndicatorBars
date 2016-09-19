@@ -15,7 +15,7 @@ open class AudioIndicatorBarsView: UIView {
     fileprivate let barsOffset: CGFloat = 2.0
     
     // MARK: - Vars
-    fileprivate var barsCount = 4
+    fileprivate var barsCount = 10
     fileprivate var bars: [BarView] = []
     
     // MARK: - Initializers
@@ -28,15 +28,14 @@ open class AudioIndicatorBarsView: UIView {
     // Custom initializers
     public init(
         _ rect: CGRect,
-        _ barsCount: Int = 4,
+        _ barsCount: Int = 10,
         _ cornerRadius: CGFloat = 0.0,
-        _ animationSpeed: Double = 1.0,
         _ color: UIColor = UIColor.black
         ) {
         
         super.init(frame: rect)
         
-        self.doDraw(rect, barsCount, cornerRadius, animationSpeed, color)
+        self.doDraw(rect, barsCount, cornerRadius, color)
         
     }
     
@@ -54,7 +53,6 @@ open class AudioIndicatorBarsView: UIView {
         _ rect: CGRect,
         _ barsCount: Int = 4,
         _ cornerRadius: CGFloat = 0.0,
-        _ animationSpeed: Double = 1.0,
         _ color: UIColor = UIColor.black
         ) {
         
@@ -63,11 +61,11 @@ open class AudioIndicatorBarsView: UIView {
         for i in 0 ..< self.barsCount {
             
             let x = sectionsWidth * CGFloat(i) + self.barsOffset
-            let y: CGFloat = 0.0
             let width = sectionsWidth - self.barsOffset * 2
+            let y: CGFloat = rect.height - width
             
             let frame: CGRect = CGRect(x: x, y: y, width: width, height: width)
-            let bar: BarView = BarView(frame, cornerRadius, animationSpeed, color, x, y, width, rect.height)
+            let bar: BarView = BarView(frame, cornerRadius, color, x, y, width, rect.height)
             
             self.bars.append(bar)
             
@@ -76,7 +74,6 @@ open class AudioIndicatorBarsView: UIView {
         }
         
     }
-    
     
     // Start animations
     open func start() {

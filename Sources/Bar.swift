@@ -18,7 +18,7 @@ open class BarView: UIView {
     fileprivate var minHeight: CGFloat = 0.0
     fileprivate var maxHeight: CGFloat = 0.0
     fileprivate var doAnimate: Bool = false
-    fileprivate var isOnTop: Bool = false
+    fileprivate var isAnimating: Bool = false
     
     // MARK: - Initializers
     required public init?(coder aDecoder: NSCoder) {
@@ -31,7 +31,6 @@ open class BarView: UIView {
     public init(
         _ rect: CGRect,
         _ cornerRadius: CGFloat = 0.0,
-        _ animationSpeed: Double = 1.0,
         _ color: UIColor = UIColor.black,
         _ x: CGFloat = 0.0,
         _ y: CGFloat = 0.0,
@@ -41,7 +40,7 @@ open class BarView: UIView {
         
         super.init(frame: rect)
         
-        self.animationSpeed = animationSpeed
+        self.animationSpeed = Double.random(min: 0.5, max: 0.9)
         self.x = x
         self.y = y
         self.minHeight = minHeight
@@ -51,7 +50,7 @@ open class BarView: UIView {
         self.layer.masksToBounds = true
         
         self.backgroundColor = color
-
+        
         self.animate()
         
     }
@@ -79,20 +78,45 @@ open class BarView: UIView {
                 
                 if(self.doAnimate) {
                     
-                    self.frame = CGRect(
-x: self.x,
-y: self.y,
-width: self.minHeight,
-height: (self.isOnTop ? self.minHeight : self.maxHeight)
-)
+                    self.isAnimating = true
                     
-                    self.isOnTop = !self.isOnTop
-                
+                    self.frame = CGRect(
+                        x: self.x,
+                        y: self.maxHeight,
+                        width: self.minHeight,
+                        height: -self.maxHeight
+                    )
+                    
                 }
                 
         }) {(finished: Bool) -> Void in
             
-            self.animate()
+            if(self.doAnimate || self.isAnimating) {
+                
+                UIView.animate(
+                    withDuration: self.animationSpeed,
+                    animations: {() -> Void in
+                        
+                        self.frame = CGRect(
+                            x: self.x,
+                            y: self.maxHeight,
+                            width: self.minHeight,
+                            height: -self.minHeight
+                        )
+                        
+                }) {(finished: Bool) -> Void in
+                    
+                    self.isAnimating = false
+                    
+                    self.animate()
+                    
+                }
+                
+            } else {
+                
+                self.animate()
+                
+            }
             
         }
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		986343B81D9070C5005C49B7 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986343B71D9070C4005C49B7 /* DoubleExtension.swift */; };
 		9887720B1D8C24A2007BA3D6 /* AudioIndicatorBars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988772011D8C24A2007BA3D6 /* AudioIndicatorBars.framework */; };
 		988772101D8C24A2007BA3D6 /* AudioIndicatorBarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9887720F1D8C24A2007BA3D6 /* AudioIndicatorBarsTests.swift */; };
 		988772121D8C24A2007BA3D6 /* AudioIndicatorBars.h in Headers */ = {isa = PBXBuildFile; fileRef = 988772041D8C24A2007BA3D6 /* AudioIndicatorBars.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		986343B71D9070C4005C49B7 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		988772011D8C24A2007BA3D6 /* AudioIndicatorBars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioIndicatorBars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		988772041D8C24A2007BA3D6 /* AudioIndicatorBars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioIndicatorBars.h; sourceTree = "<group>"; };
 		9887720A1D8C24A2007BA3D6 /* AudioIndicatorBarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioIndicatorBarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 			children = (
 				98DB46461D8D89CA0071689C /* AudioIndicatorBarsView.swift */,
 				98DB46471D8D89CA0071689C /* Bar.swift */,
+				986343B71D9070C4005C49B7 /* DoubleExtension.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				986343B81D9070C5005C49B7 /* DoubleExtension.swift in Sources */,
 				98DB46481D8D89CA0071689C /* AudioIndicatorBarsView.swift in Sources */,
 				98DB46491D8D89CA0071689C /* Bar.swift in Sources */,
 			);
