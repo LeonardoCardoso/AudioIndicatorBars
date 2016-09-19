@@ -20,13 +20,3 @@ Indicates for your app users which audio is playing.
 <p>
 
 <hr />
-
-
-# TODO
-
-Feel free to PR and contribute.
-
-- [ ] Custom number of bars
-- [ ] Custom bar length
-- [ ] Bars with individual colors 
-- [ ] Animation speed

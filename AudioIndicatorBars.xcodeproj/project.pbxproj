@@ -12,13 +12,8 @@
 		988772121D8C24A2007BA3D6 /* AudioIndicatorBars.h in Headers */ = {isa = PBXBuildFile; fileRef = 988772041D8C24A2007BA3D6 /* AudioIndicatorBars.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9887723A1D8C27A3007BA3D6 /* AudioIndicatorBars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988772311D8C27A3007BA3D6 /* AudioIndicatorBars.framework */; };
 		988772561D8C2DBD007BA3D6 /* AudioIndicatorBars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9887724D1D8C2DBD007BA3D6 /* AudioIndicatorBars.framework */; };
-		988772751D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */; };
-		988772761D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */; };
-		988772771D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */; };
-		988772781D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */; };
-		988772791D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */; };
-		9887727A1D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */; };
-		9887727B1D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */; };
+		98DB46481D8D89CA0071689C /* AudioIndicatorBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DB46461D8D89CA0071689C /* AudioIndicatorBarsView.swift */; };
+		98DB46491D8D89CA0071689C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DB46471D8D89CA0071689C /* Bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +57,8 @@
 		9887724D1D8C2DBD007BA3D6 /* AudioIndicatorBars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioIndicatorBars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		988772551D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioIndicatorBarsMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		988772691D8C2E36007BA3D6 /* AudioIndicatorBarsWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioIndicatorBarsWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioIndicatorBars.swift; sourceTree = "<group>"; };
+		98DB46461D8D89CA0071689C /* AudioIndicatorBarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioIndicatorBarsView.swift; sourceTree = "<group>"; };
+		98DB46471D8D89CA0071689C /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +181,8 @@
 		9887729C1D8C3516007BA3D6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				988772741D8C2F07007BA3D6 /* AudioIndicatorBars.swift */,
+				98DB46461D8D89CA0071689C /* AudioIndicatorBarsView.swift */,
+				98DB46471D8D89CA0071689C /* Bar.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -494,7 +491,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988772751D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */,
+				98DB46481D8D89CA0071689C /* AudioIndicatorBarsView.swift in Sources */,
+				98DB46491D8D89CA0071689C /* Bar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +500,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988772761D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */,
 				988772101D8C24A2007BA3D6 /* AudioIndicatorBarsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +508,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988772771D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +515,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988772781D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +522,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988772791D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +529,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9887727A1D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +536,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9887727B1D8C2F07007BA3D6 /* AudioIndicatorBars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,7 +772,6 @@
 		988772461D8C27A3007BA3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = T99T2WGRY2;
 				INFOPLIST_FILE = "AudioIndicatorBarsTests/Info-tvOS.plist";
@@ -797,7 +788,6 @@
 		988772471D8C27A3007BA3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = T99T2WGRY2;
 				INFOPLIST_FILE = "AudioIndicatorBarsTests/Info-tvOS.plist";
@@ -856,7 +846,6 @@
 		988772621D8C2DBD007BA3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = T99T2WGRY2;
 				INFOPLIST_FILE = AudioIndicatorBarsTests/Info.plist;
@@ -873,7 +862,6 @@
 		988772631D8C2DBD007BA3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = T99T2WGRY2;
 				INFOPLIST_FILE = AudioIndicatorBarsTests/Info.plist;
