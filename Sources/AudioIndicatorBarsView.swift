@@ -16,7 +16,7 @@ open class AudioIndicatorBarsView: UIView {
     
     // MARK: - Vars
     fileprivate var barsCount = 4
-    fileprivate var bars: [BarView]?
+    fileprivate var bars: [BarView] = []
     
     // MARK: - Initializers
     required public init?(coder aDecoder: NSCoder) {
@@ -63,12 +63,13 @@ open class AudioIndicatorBarsView: UIView {
         for i in 0 ..< self.barsCount {
             
             let x = sectionsWidth * CGFloat(i) + self.barsOffset
+            let y: CGFloat = 0.0
             let width = sectionsWidth - self.barsOffset * 2
             
-            let frame: CGRect = CGRect(x: x, y: 0.0, width: width, height: width)
-            let bar: BarView = BarView(frame, cornerRadius, animationSpeed, color, rect.height)
+            let frame: CGRect = CGRect(x: x, y: y, width: width, height: width)
+            let bar: BarView = BarView(frame, cornerRadius, animationSpeed, color, x, y, width, rect.height)
             
-            self.bars?.append(bar)
+            self.bars.append(bar)
             
             self.addSubview(bar)
             
@@ -80,14 +81,14 @@ open class AudioIndicatorBarsView: UIView {
     // Start animations
     open func start() {
         
-        for bar in self.bars! { bar.start() }
+        for bar in self.bars { bar.start() }
         
     }
     
     // Stop animations
     open func stop() {
         
-        for bar in self.bars! { bar.stop() }
+        for bar in self.bars { bar.stop() }
         
     }
     

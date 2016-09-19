@@ -24,16 +24,42 @@
                                     <constraint firstAttribute="height" constant="100" id="ccn-9d-lZe"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhY-pb-Fh8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="tTz-BJ-K3y"/>
+                                </constraints>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKB-m5-bvl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-AB-9g0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B1p-Jt-coA"/>
+                                </constraints>
+                                <state key="normal" title="STOP"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pLy-na-Q4R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NhY-pb-Fh8" firstAttribute="centerX" secondItem="kPH-3t-6c4" secondAttribute="centerX" id="IKf-uv-bOj"/>
+                            <constraint firstItem="hEd-AB-9g0" firstAttribute="centerX" secondItem="NhY-pb-Fh8" secondAttribute="centerX" id="WxC-CY-fUv"/>
+                            <constraint firstItem="NhY-pb-Fh8" firstAttribute="top" secondItem="kPH-3t-6c4" secondAttribute="bottom" constant="27.5" id="Ymx-Ii-esp"/>
                             <constraint firstItem="kPH-3t-6c4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mUZ-66-qtT"/>
                             <constraint firstItem="kPH-3t-6c4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s6l-iF-5WF"/>
+                            <constraint firstItem="hEd-AB-9g0" firstAttribute="top" secondItem="NhY-pb-Fh8" secondAttribute="bottom" constant="8" id="tfT-PR-qJK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="audioIndicatorBarsView" destination="kPH-3t-6c4" id="dNw-Sv-WvB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="84" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>

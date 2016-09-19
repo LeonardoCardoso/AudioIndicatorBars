@@ -13,7 +13,12 @@ open class BarView: UIView {
     
     // MARK: - Vars
     fileprivate var animationSpeed: Double = 1.0
-    fileprivate var maxHeight: CGFloat = 0
+    fileprivate var x: CGFloat = 0.0
+    fileprivate var y: CGFloat = 0.0
+    fileprivate var minHeight: CGFloat = 0.0
+    fileprivate var maxHeight: CGFloat = 0.0
+    fileprivate var doAnimate: Bool = false
+    fileprivate var isOnTop: Bool = false
     
     // MARK: - Initializers
     required public init?(coder aDecoder: NSCoder) {
@@ -28,18 +33,26 @@ open class BarView: UIView {
         _ cornerRadius: CGFloat = 0.0,
         _ animationSpeed: Double = 1.0,
         _ color: UIColor = UIColor.black,
+        _ x: CGFloat = 0.0,
+        _ y: CGFloat = 0.0,
+        _ minHeight: CGFloat = 0.0,
         _ maxHeight: CGFloat = 0.0
         ) {
         
         super.init(frame: rect)
         
         self.animationSpeed = animationSpeed
+        self.x = x
+        self.y = y
+        self.minHeight = minHeight
         self.maxHeight = maxHeight
         
         self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = true
-
+        
         self.backgroundColor = color
+
+        self.animate()
         
     }
     
@@ -47,12 +60,41 @@ open class BarView: UIView {
     // Start animations
     open func start() {
         
+        self.doAnimate = true
         
     }
     
     // Stop animations
     open func stop() {
         
+        self.doAnimate = false
+        
+    }
+    
+    func animate() {
+        
+        UIView.animate(
+            withDuration: self.animationSpeed,
+            animations: {() -> Void in
+                
+                if(self.doAnimate) {
+                    
+                    self.frame = CGRect(
+x: self.x,
+y: self.y,
+width: self.minHeight,
+height: (self.isOnTop ? self.minHeight : self.maxHeight)
+)
+                    
+                    self.isOnTop = !self.isOnTop
+                
+                }
+                
+        }) {(finished: Bool) -> Void in
+            
+            self.animate()
+            
+        }
         
     }
     
