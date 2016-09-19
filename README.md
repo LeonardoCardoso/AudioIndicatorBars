@@ -1,5 +1,5 @@
 <p align="center">
-![AudioIndicatorBars](Images/badge.png)
+![AudioIndicatorBars](Images/logo.png)
 <p>
 
 <p align="center">
@@ -7,7 +7,7 @@
 <p>
 
 <p align="center">
-Indicates for your app users which audio is playing. Just like the Podcast app.
+Indicates for your app users which audio is playing. Just like the Podcasts app.
 <p>
 
 <p align="center">
