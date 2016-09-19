@@ -9,14 +9,36 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 open class AudioIndicatorBarsView: UIView {
     
     // MARK: - Lets
     fileprivate let barsOffset: CGFloat = 2.0
     
     // MARK: - Vars
-    fileprivate var barsCount = 10
-    fileprivate var bars: [BarView] = []
+    fileprivate var barsSet: [BarView] = []
+    
+    fileprivate var barCornerRadius: CGFloat = 0
+    @IBInspectable var corner : CGFloat = 0 {
+        didSet {
+            self.barCornerRadius = corner
+        }
+    }
+    
+    fileprivate var barsCount: Int = 4
+    @IBInspectable var bars : CGFloat = 4 {
+        didSet {
+            self.barsCount = Int(bars)
+        }
+    }
+    
+    
+    fileprivate var barColor: UIColor = UIColor.black
+    @IBInspectable var color : UIColor = UIColor.black {
+        didSet {
+            self.barColor = color
+        }
+    }
     
     // MARK: - Initializers
     required public init?(coder aDecoder: NSCoder) {
@@ -29,13 +51,13 @@ open class AudioIndicatorBarsView: UIView {
     public init(
         _ rect: CGRect,
         _ barsCount: Int = 10,
-        _ cornerRadius: CGFloat = 0.0,
+        _ barCornerRadius: CGFloat = 0.0,
         _ color: UIColor = UIColor.black
         ) {
         
         super.init(frame: rect)
         
-        self.doDraw(rect, barsCount, cornerRadius, color)
+        self.doDraw(rect, barsCount, barCornerRadius, color)
         
     }
     
@@ -43,8 +65,8 @@ open class AudioIndicatorBarsView: UIView {
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        // TODO check User Defined Runtime Attributes
-        self.doDraw(rect)
+        
+        self.doDraw(rect, self.barsCount, CGFloat(self.barCornerRadius), self.color)
         
     }
     
@@ -67,7 +89,7 @@ open class AudioIndicatorBarsView: UIView {
             let frame: CGRect = CGRect(x: x, y: y, width: width, height: width)
             let bar: BarView = BarView(frame, cornerRadius, color, x, y, width, rect.height)
             
-            self.bars.append(bar)
+            self.barsSet.append(bar)
             
             self.addSubview(bar)
             
@@ -78,14 +100,14 @@ open class AudioIndicatorBarsView: UIView {
     // Start animations
     open func start() {
         
-        for bar in self.bars { bar.start() }
+        for bar in self.barsSet { bar.start() }
         
     }
     
     // Stop animations
     open func stop() {
         
-        for bar in self.bars { bar.stop() }
+        for bar in self.barsSet { bar.stop() }
         
     }
     
