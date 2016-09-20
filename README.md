@@ -3,7 +3,7 @@
 <p>
 
 <p align="center">
-**Audio Indicator Bars** for **iOS**, **macOS (?)**, **watchOS** and **tvOS**
+**Audio Indicator Bars** for **iOS** and **tvOS**
 <p>
 
 <p align="center">
@@ -11,10 +11,9 @@ Indicates for your app users which audio is playing. Just like the Podcasts app.
 <p>
 
 <p align="center">
-	[![Platform](https://img.shields.io/badge/platform-iOS%20|%20macOS%20|%20watchOS%20|%20tvOS-orange.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#requirements-and-details)
+	[![Platform](https://img.shields.io/badge/platform-iOS%20|%20tvOS-orange.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#requirements-and-details)
 	[![CocoaPods](https://img.shields.io/badge/pod-v0.0.1-red.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#cocoapods)
 	[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#carthage)
-	[![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-orange.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#swift-package-manager)
 	[![Build Status](https://travis-ci.org/LeonardoCardoso/AudioIndicatorBars.svg?branch=master)](https://travis-ci.org/LeonardoCardoso/AudioIndicatorBars)
 <p>
 <p>
@@ -26,7 +25,6 @@ Indicates for your app users which audio is playing. Just like the Podcasts app.
 - [Installation](#installation)
       * [CocoaPods](#cocoapods)
       * [Carthage](#carthage)
-      * [Swift Package Manager](#swift-package-manager)
       * [Manually](#manually)
 - [Usage](#usage)
       * [Instatiating](#instatiating)
@@ -42,7 +40,7 @@ Indicates for your app users which audio is playing. Just like the Podcasts app.
 
 ## Requirements and Details
 
-* iOS 9.0+ / macOS 10.11+ / tvOS 9.0+ / watchOS 2.0+
+* iOS 9.0+ / tvOS 9.0+
 * Xcode 8.0+
 * Built with Swift 3.0
 
@@ -72,23 +70,6 @@ To use **AudioIndicatorBars** as a Carthage module package just add the followin
   	// ...
 	github "LeonardoCardoso/AudioIndicatorBars" ~> 0.0.1
   	// ...
-```
-
-### Swift Package Manager
-
-To use **AudioIndicatorBars** as a Swift Package Manager package just add the following in your **Package.swift** file.
-
-```swift
-import PackageDescription
-
-let package = Package(
-  name: "Your Target Name",
-  dependencies: [
-  	// ...
-    .Package(url: "https://github.com/LeonardoCardoso/AudioIndicatorBars.git", "0.0.1")
-  	// ...
-  ]
-)
 ```
 
 ### Manually

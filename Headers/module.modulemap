@@ -1,0 +1,6 @@
+framework module AudioIndicatorBars {
+    umbrella header "AudioIndicatorBars.h"
+    
+    export *
+    module * { export * }
+}

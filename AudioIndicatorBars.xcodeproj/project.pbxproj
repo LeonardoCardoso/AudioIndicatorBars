@@ -12,7 +12,6 @@
 		988772101D8C24A2007BA3D6 /* AudioIndicatorBarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9887720F1D8C24A2007BA3D6 /* AudioIndicatorBarsTests.swift */; };
 		988772121D8C24A2007BA3D6 /* AudioIndicatorBars.h in Headers */ = {isa = PBXBuildFile; fileRef = 988772041D8C24A2007BA3D6 /* AudioIndicatorBars.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9887723A1D8C27A3007BA3D6 /* AudioIndicatorBars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988772311D8C27A3007BA3D6 /* AudioIndicatorBars.framework */; };
-		988772561D8C2DBD007BA3D6 /* AudioIndicatorBars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9887724D1D8C2DBD007BA3D6 /* AudioIndicatorBars.framework */; };
 		98DB46481D8D89CA0071689C /* AudioIndicatorBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DB46461D8D89CA0071689C /* AudioIndicatorBarsView.swift */; };
 		98DB46491D8D89CA0071689C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DB46471D8D89CA0071689C /* Bar.swift */; };
 /* End PBXBuildFile section */
@@ -32,33 +31,21 @@
 			remoteGlobalIDString = 988772301D8C27A3007BA3D6;
 			remoteInfo = AudioIndicatorBarsTvOS;
 		};
-		988772571D8C2DBD007BA3D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 988771F81D8C24A2007BA3D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9887724C1D8C2DBD007BA3D6;
-			remoteInfo = AudioIndicatorBarsMacOS;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		985C25B71D915E980067ED6A /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		986343B71D9070C4005C49B7 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		988772011D8C24A2007BA3D6 /* AudioIndicatorBars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioIndicatorBars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		988772041D8C24A2007BA3D6 /* AudioIndicatorBars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioIndicatorBars.h; sourceTree = "<group>"; };
 		9887720A1D8C24A2007BA3D6 /* AudioIndicatorBarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioIndicatorBarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9887720F1D8C24A2007BA3D6 /* AudioIndicatorBarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioIndicatorBarsTests.swift; sourceTree = "<group>"; };
 		988772111D8C24A2007BA3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9887721E1D8C2612007BA3D6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		9887721F1D8C2612007BA3D6 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		988772201D8C2612007BA3D6 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		988772241D8C26A1007BA3D6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		988772251D8C26A1007BA3D6 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		988772261D8C26A1007BA3D6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988772311D8C27A3007BA3D6 /* AudioIndicatorBars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioIndicatorBars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		988772391D8C27A3007BA3D6 /* AudioIndicatorBarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioIndicatorBarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9887724D1D8C2DBD007BA3D6 /* AudioIndicatorBars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioIndicatorBars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		988772551D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioIndicatorBarsMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		988772691D8C2E36007BA3D6 /* AudioIndicatorBarsWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioIndicatorBarsWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DB46461D8D89CA0071689C /* AudioIndicatorBarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioIndicatorBarsView.swift; sourceTree = "<group>"; };
 		98DB46471D8D89CA0071689C /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,28 +81,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		988772491D8C2DBD007BA3D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		988772521D8C2DBD007BA3D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				988772561D8C2DBD007BA3D6 /* AudioIndicatorBars.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		988772651D8C2E36007BA3D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -136,9 +101,6 @@
 				9887720A1D8C24A2007BA3D6 /* AudioIndicatorBarsTests.xctest */,
 				988772311D8C27A3007BA3D6 /* AudioIndicatorBars.framework */,
 				988772391D8C27A3007BA3D6 /* AudioIndicatorBarsTests.xctest */,
-				9887724D1D8C2DBD007BA3D6 /* AudioIndicatorBars.framework */,
-				988772551D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOSTests.xctest */,
-				988772691D8C2E36007BA3D6 /* AudioIndicatorBarsWatchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				988772041D8C24A2007BA3D6 /* AudioIndicatorBars.h */,
+				985C25B71D915E980067ED6A /* module.modulemap */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -172,9 +135,7 @@
 		9887729B1D8C350B007BA3D6 /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				9887721E1D8C2612007BA3D6 /* Info-macOS.plist */,
 				9887721F1D8C2612007BA3D6 /* Info-tvOS.plist */,
-				988772201D8C2612007BA3D6 /* Info-watchOS.plist */,
 				988772111D8C24A2007BA3D6 /* Info.plist */,
 			);
 			name = Info;
@@ -193,7 +154,6 @@
 		9887729D1D8C3521007BA3D6 /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				988772241D8C26A1007BA3D6 /* Info-macOS.plist */,
 				988772251D8C26A1007BA3D6 /* Info-tvOS.plist */,
 				988772261D8C26A1007BA3D6 /* Info.plist */,
 			);
@@ -212,20 +172,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9887722E1D8C27A3007BA3D6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9887724A1D8C2DBD007BA3D6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		988772661D8C2E36007BA3D6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -307,60 +253,6 @@
 			productReference = 988772391D8C27A3007BA3D6 /* AudioIndicatorBarsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9887724C1D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9887725E1D8C2DBD007BA3D6 /* Build configuration list for PBXNativeTarget "AudioIndicatorBarsMacOS" */;
-			buildPhases = (
-				988772481D8C2DBD007BA3D6 /* Sources */,
-				988772491D8C2DBD007BA3D6 /* Frameworks */,
-				9887724A1D8C2DBD007BA3D6 /* Headers */,
-				9887724B1D8C2DBD007BA3D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AudioIndicatorBarsMacOS;
-			productName = AudioIndicatorBarsMacOS;
-			productReference = 9887724D1D8C2DBD007BA3D6 /* AudioIndicatorBars.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		988772541D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 988772611D8C2DBD007BA3D6 /* Build configuration list for PBXNativeTarget "AudioIndicatorBarsMacOSTests" */;
-			buildPhases = (
-				988772511D8C2DBD007BA3D6 /* Sources */,
-				988772521D8C2DBD007BA3D6 /* Frameworks */,
-				988772531D8C2DBD007BA3D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				988772581D8C2DBD007BA3D6 /* PBXTargetDependency */,
-			);
-			name = AudioIndicatorBarsMacOSTests;
-			productName = AudioIndicatorBarsMacOSTests;
-			productReference = 988772551D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		988772681D8C2E36007BA3D6 /* AudioIndicatorBarsWatchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9887726E1D8C2E36007BA3D6 /* Build configuration list for PBXNativeTarget "AudioIndicatorBarsWatchOS" */;
-			buildPhases = (
-				988772641D8C2E36007BA3D6 /* Sources */,
-				988772651D8C2E36007BA3D6 /* Frameworks */,
-				988772661D8C2E36007BA3D6 /* Headers */,
-				988772671D8C2E36007BA3D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AudioIndicatorBarsWatchOS;
-			productName = AudioIndicatorBarsWatchOS;
-			productReference = 988772691D8C2E36007BA3D6 /* AudioIndicatorBarsWatchOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -394,24 +286,6 @@
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
-					9887724C1D8C2DBD007BA3D6 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T99T2WGRY2;
-						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
-					};
-					988772541D8C2DBD007BA3D6 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T99T2WGRY2;
-						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
-					};
-					988772681D8C2E36007BA3D6 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T99T2WGRY2;
-						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 988771FB1D8C24A2007BA3D6 /* Build configuration list for PBXProject "AudioIndicatorBars" */;
@@ -430,9 +304,6 @@
 				988772091D8C24A2007BA3D6 /* AudioIndicatorBarsTests */,
 				988772301D8C27A3007BA3D6 /* AudioIndicatorBarsTvOS */,
 				988772381D8C27A3007BA3D6 /* AudioIndicatorBarsTvOSTests */,
-				9887724C1D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOS */,
-				988772541D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOSTests */,
-				988772681D8C2E36007BA3D6 /* AudioIndicatorBarsWatchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -460,27 +331,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		988772371D8C27A3007BA3D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9887724B1D8C2DBD007BA3D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		988772531D8C2DBD007BA3D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		988772671D8C2E36007BA3D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,27 +372,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		988772481D8C2DBD007BA3D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		988772511D8C2DBD007BA3D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		988772641D8C2E36007BA3D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -555,11 +384,6 @@
 			isa = PBXTargetDependency;
 			target = 988772301D8C27A3007BA3D6 /* AudioIndicatorBarsTvOS */;
 			targetProxy = 9887723B1D8C27A3007BA3D6 /* PBXContainerItemProxy */;
-		};
-		988772581D8C2DBD007BA3D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9887724C1D8C2DBD007BA3D6 /* AudioIndicatorBarsMacOS */;
-			targetProxy = 988772571D8C2DBD007BA3D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -679,6 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "AudioIndicatorBars-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -700,6 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "AudioIndicatorBars-Swift.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -744,6 +570,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Headers/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBars;
 				PRODUCT_NAME = AudioIndicatorBars;
 				SKIP_INSTALL = YES;
@@ -766,6 +593,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Headers/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBars;
 				PRODUCT_NAME = AudioIndicatorBars;
 				SKIP_INSTALL = YES;
@@ -800,123 +628,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBarsTests;
 				PRODUCT_NAME = AudioIndicatorBarsTests;
 				SWIFT_OBJC_BRIDGING_HEADER = "Sources/AudioIndicatorBarsTvOSTests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		9887725F1D8C2DBD007BA3D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T99T2WGRY2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Info-macOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBars;
-				PRODUCT_NAME = AudioIndicatorBars;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		988772601D8C2DBD007BA3D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T99T2WGRY2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Info-macOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBars;
-				PRODUCT_NAME = AudioIndicatorBars;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		988772621D8C2DBD007BA3D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = T99T2WGRY2;
-				INFOPLIST_FILE = AudioIndicatorBarsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBarsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/AudioIndicatorBarsMacOSTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		988772631D8C2DBD007BA3D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = T99T2WGRY2;
-				INFOPLIST_FILE = AudioIndicatorBarsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBarsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/AudioIndicatorBarsMacOSTests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		9887726F1D8C2E36007BA3D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T99T2WGRY2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Info-watchOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBars;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		988772701D8C2E36007BA3D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T99T2WGRY2;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Info-watchOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.AudioIndicatorBars;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -965,33 +676,6 @@
 			buildConfigurations = (
 				988772461D8C27A3007BA3D6 /* Debug */,
 				988772471D8C27A3007BA3D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9887725E1D8C2DBD007BA3D6 /* Build configuration list for PBXNativeTarget "AudioIndicatorBarsMacOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9887725F1D8C2DBD007BA3D6 /* Debug */,
-				988772601D8C2DBD007BA3D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		988772611D8C2DBD007BA3D6 /* Build configuration list for PBXNativeTarget "AudioIndicatorBarsMacOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				988772621D8C2DBD007BA3D6 /* Debug */,
-				988772631D8C2DBD007BA3D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9887726E1D8C2E36007BA3D6 /* Build configuration list for PBXNativeTarget "AudioIndicatorBarsWatchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9887726F1D8C2E36007BA3D6 /* Debug */,
-				988772701D8C2E36007BA3D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
