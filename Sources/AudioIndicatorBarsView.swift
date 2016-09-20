@@ -47,6 +47,14 @@ open class AudioIndicatorBarsView: UIView {
         
     }
     
+    public override init(frame: CGRect) {
+        
+        super.init(frame: frame)
+        
+        self.doDraw(frame, self.barsCount, CGFloat(self.barCornerRadius), self.color)
+        
+    }
+    
     // Custom initializers
     public init(
         _ rect: CGRect,
@@ -56,7 +64,7 @@ open class AudioIndicatorBarsView: UIView {
         ) {
         
         super.init(frame: rect)
-        
+
         self.doDraw(rect, barsCount, barCornerRadius, color)
         
     }
