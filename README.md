@@ -94,6 +94,10 @@ let indicator: AudioIndicatorBarsView =
 
 #### Interface Builder
 
+| Add a view with Custom Class on Indentity Inspector |
+|:-:|
+| ![IB1.png](Images/IB0.png) |
+
 | Indentity Inspector | Atributes Inspector | Result |
 |:-:|:-:|:-:|
 | ![IB1.png](Images/IB1.png) | ![IB2.png](Images/IB2.png) | ![example1.gif](Images/example1.gif) |
