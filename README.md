@@ -90,6 +90,8 @@ let indicator: AudioIndicatorBarsView =
                 cornerRadius: CGFloat,
                 color: UIColor
         )
+        
+// then add indicator to your view
 ```
 
 #### Interface Builder
