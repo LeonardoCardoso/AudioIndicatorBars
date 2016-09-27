@@ -58,7 +58,7 @@ open class AudioIndicatorBarsView: UIView {
     // Custom initializers
     public init(
         _ rect: CGRect,
-        _ barsCount: Int = 10,
+        _ barsCount: Int = 4,
         _ barCornerRadius: CGFloat = 0.0,
         _ color: UIColor = UIColor.black
         ) {
