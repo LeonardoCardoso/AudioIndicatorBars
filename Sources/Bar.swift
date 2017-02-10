@@ -49,9 +49,6 @@ open class BarView: UIView {
         self.layer.masksToBounds = true
         
         self.backgroundColor = color
-        
-        self.animate()
-        
     }
     
     
@@ -59,6 +56,7 @@ open class BarView: UIView {
     open func start() {
         
         self.doAnimate = true
+        self.animate()
         
     }
     
@@ -70,12 +68,10 @@ open class BarView: UIView {
     }
     
     func animate() {
-        
-        UIView.animate(
-            withDuration: self.animationSpeed,
-            animations: {() -> Void in
-                
-                if(self.doAnimate) {
+        if(self.doAnimate && !self.isAnimating) {
+            UIView.animate(
+                withDuration: self.animationSpeed,
+                animations: {() -> Void in
                     
                     self.isAnimating = true
                     
@@ -86,11 +82,7 @@ open class BarView: UIView {
                         height: -self.maxHeight
                     )
                     
-                }
-                
-        }) {(finished: Bool) -> Void in
-            
-            if(self.doAnimate || self.isAnimating) {
+            }) {(finished: Bool) -> Void in
                 
                 UIView.animate(
                     withDuration: self.animationSpeed,
@@ -106,17 +98,10 @@ open class BarView: UIView {
                 }) {(finished: Bool) -> Void in
                     
                     self.isAnimating = false
-                    
                     self.animate()
-                    
                 }
                 
-            } else {
-                
-                self.animate()
-                
             }
-            
         }
         
     }
