@@ -119,4 +119,8 @@ open class AudioIndicatorBarsView: UIView {
         
     }
     
+    deinit {
+        self.barsSet.removeAll()
+    }
+    
 }
