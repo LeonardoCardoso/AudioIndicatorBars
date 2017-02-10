@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 	s.name = "AudioIndicatorBars"
 	s.summary = "Indicates for your app users which audio is playing."
 	s.requires_arc = true
-	s.version = "0.0.1"
+	s.version = "0.0.2"
 	s.license = { :type => "MIT", :file => "LICENSE" }
 	s.author = { "Leonardo Cardoso" => "contact@leocardz.com" }
 	s.homepage = "https://github.com/LeonardoCardoso/AudioIndicatorBars"

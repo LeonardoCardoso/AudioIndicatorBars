@@ -12,7 +12,7 @@ Indicates for your app users which audio is playing. Just like the Podcasts app.
 
 <p align="center">
 	[![Platform](https://img.shields.io/badge/platform-iOS%20|%20tvOS-orange.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#requirements-and-details)
-	[![CocoaPods](https://img.shields.io/badge/pod-v0.0.1-red.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#cocoapods)
+	[![CocoaPods](https://img.shields.io/badge/pod-v0.0.2-red.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#cocoapods)
 	[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#carthage)
 	[![Build Status](https://travis-ci.org/LeonardoCardoso/AudioIndicatorBars.svg?branch=master)](https://travis-ci.org/LeonardoCardoso/AudioIndicatorBars)
 <p>
@@ -57,7 +57,7 @@ To use **AudioIndicatorBars** as a pod package just add the following in your **
 	target 'Your Target Name' do
 	  	use_frameworks!
 	  	// ...
-	  	pod 'AudioIndicatorBars', '~> 0.0.1'
+	  	pod 'AudioIndicatorBars', '~> 0.0.2'
 	  	// ...
 	end
 ```
@@ -68,7 +68,7 @@ To use **AudioIndicatorBars** as a Carthage module package just add the followin
 
 ```ruby
   	// ...
-	github "LeonardoCardoso/AudioIndicatorBars" ~> 0.0.1
+	github "LeonardoCardoso/AudioIndicatorBars" ~> 0.0.2
   	// ...
 ```
 
