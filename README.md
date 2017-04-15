@@ -1,36 +1,27 @@
-<p align="center">
 ![AudioIndicatorBars](Images/logo.png)
-<p>
 
-<p align="center">
 **Audio Indicator Bars** for **iOS** and **tvOS**
-<p>
 
-<p align="center">
 Indicates for your app users which audio is playing. Just like the Podcasts app.
-<p>
 
-<p align="center">
-	[![Platform](https://img.shields.io/badge/platform-iOS%20|%20tvOS-orange.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#requirements-and-details)
-	[![CocoaPods](https://img.shields.io/badge/pod-v0.0.2-red.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#cocoapods)
-	[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#carthage)
-	[![Build Status](https://travis-ci.org/LeonardoCardoso/AudioIndicatorBars.svg?branch=master)](https://travis-ci.org/LeonardoCardoso/AudioIndicatorBars)
-<p>
-<p>
+[![Platform](https://img.shields.io/badge/platform-iOS%20|%20tvOS-orange.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#requirements-and-details)
+[![CocoaPods](https://img.shields.io/badge/pod-v0.0.2-red.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#cocoapods)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/LeonardoCardoso/AudioIndicatorBars#carthage)
+[![Build Status](https://travis-ci.org/LeonardoCardoso/AudioIndicatorBars.svg?branch=master)](https://travis-ci.org/LeonardoCardoso/AudioIndicatorBars)
 
 
 #### Index 
 
 - [Requirements and Details](#requirements-and-details)
 - [Installation](#installation)
-      * [CocoaPods](#cocoapods)
-      * [Carthage](#carthage)
-      * [Manually](#manually)
+    * [CocoaPods](#cocoapods)
+    * [Carthage](#carthage)
+    * [Manually](#manually)
 - [Usage](#usage)
-      * [Instatiating](#instatiating)
+    * [Instatiating](#instatiating)
         + [Programmatically](#programmatically)
         + [Interface Builder](#interface-builder)
-      * [Actions](#actions)
+    * [Actions](#actions)
         + [Start](#start)
         + [Stop](#stop)
 - [Information and Contact](#information-and-contact)
